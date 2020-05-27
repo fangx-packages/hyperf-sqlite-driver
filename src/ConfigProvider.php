@@ -12,15 +12,20 @@ declare(strict_types=1);
 
 namespace Fangx\SQLite;
 
-use Hyperf\Database\Connectors\ConnectionFactory;
+use Fangx\SQLite\Connectors\SQLiteConnector;
+use Hyperf\Database\Connection;
 
 class ConfigProvider
 {
     public function __invoke(): array
     {
+        Connection::resolverFor('sqlite', function ($connection, $database, $prefix, $config) {
+            return new SQLiteConnection($connection, $database, $prefix, $config);
+        });
+
         return [
             'dependencies' => [
-                ConnectionFactory::class => SupportSQLiteConnectionFactory::class,
+                'db.connector.sqlite' => SQLiteConnector::class,
             ],
             'listeners' => [
             ],
