@@ -3,11 +3,12 @@
 declare(strict_types=1);
 
 /**
- * HotniuerGrpc
+ * Fangx's Packages
  *
- * @link     https://glab.tagtic.cn/niufangxu/hotniuer-grpc
- * @document https://glab.tagtic.cn/niufangxu/hotniuer-grpc/blob/master/README.md
- * @contact  ggjs@infinities.com.cn
+ * @link     https://github.com/nfangxu/hyperf-sqlite-driver
+ * @document https://github.com/nfangxu/hyperf-sqlite-driver/blob/master/README.md
+ * @contact  nfangxu@gmail.com
+ * @author   nfangxu
  */
 
 namespace Fangx\SQLite\Schema\Grammars;
