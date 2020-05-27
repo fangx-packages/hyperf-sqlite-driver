@@ -13,17 +13,11 @@
       "email": "nfangxu@gmail.com"
     }
   ],
-  "repositories": {
-    "hyperf": {
-      "type": "path",
-      "url": "../hyperf/src/*"
-    }
-  },
   "require": {
     "php": ">=7.2",
     "ext-swoole": ">=4.4",
-    "hyperf/database": "~1.1.0",
-    "hyperf/utils": "~1.1.0"
+    "hyperf/database": "1.1.*",
+    "hyperf/utils": "1.1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.0.0",
