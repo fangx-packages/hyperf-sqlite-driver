@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Fangx\SQLite;
 
-use Doctrine\DBAL\Driver\PDOSqlite\Driver as DoctrineDriver;
+use Doctrine\DBAL\Driver\PDO\SQLite\Driver as DoctrineDriver;
 use Fangx\SQLite\Query\Grammars\SQLiteGrammar as QueryGrammar;
 use Fangx\SQLite\Query\Processors\SQLiteProcessor;
 use Fangx\SQLite\Schema\Grammars\SQLiteGrammar as SchemaGrammar;
@@ -83,7 +83,7 @@ class SQLiteConnection extends Connection
     /**
      * Get the Doctrine DBAL driver.
      *
-     * @return \Doctrine\DBAL\Driver\PDOSqlite\Driver
+     * @return DoctrineDriver
      */
     protected function getDoctrineDriver()
     {

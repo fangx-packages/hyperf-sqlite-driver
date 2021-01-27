@@ -26,7 +26,7 @@
     "friendsofphp/php-cs-fixer": "^2.9"
   },
   "suggest": {
-    "doctrine/dbal": "Required to rename columns (^2.6)."
+    "doctrine/dbal": "Required to rename columns (^3.0)."
   },
   "autoload": {
     "psr-4": {
