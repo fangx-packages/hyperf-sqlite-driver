@@ -16,8 +16,8 @@
   "require": {
     "php": ">=7.2",
     "ext-swoole": ">=4.5",
-    "hyperf/database": "2.1.*",
-    "hyperf/utils": "2.1.*"
+    "hyperf/database": "2.*",
+    "hyperf/utils": "2.*"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
